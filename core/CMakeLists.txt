@@ -80,8 +80,9 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+
 if  (NOT DEFINED COMPILE_LIB_SET)
-	option (COMPILE_LIB_SET "Set ioConnectCore compile to a Lib" OFF)
+	option (COMPILE_LIB_SET "Set ioConnectCore compile to a Lib" ON)
 endif()
 
 
@@ -94,7 +95,7 @@ file (GLOB_RECURSE SRC_LIST ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp ${CMAKE_CURREN
 include_directories (${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 if (COMPILE_LIB_SET)
-	add_library (ioConnectCore SHARED ${SRC_LIST})	
+	add_library (ioConnectCore STATIC ${SRC_LIST})	
 else()
 	set (ioConnectCore_SRC ${SRC_LIST} PARENT_SCOPE)
 endif()

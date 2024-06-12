@@ -142,52 +142,64 @@ static void * _vc_sub_property_get(cJSON *object, unsigned int subtype, char *na
 
     switch (subtype) {
         case IOTEX_VC_BUILD_PROPERTY_SUB_TYPE_ID:
+        {
             cJSON *id = cJSON_GetObjectItem(object, "id");
             if (NULL == id || !cJSON_IsString(id))
                 break;
 
             value = calloc(strlen(id->valuestring) + 1, sizeof(char));
-            strcpy(value, id->valuestring);                 
+            strcpy(value, id->valuestring);
             break;
+        }
         case IOTEX_VC_BUILD_PROPERTY_SUB_TYPE_TYPE:
+        {
             cJSON *type = cJSON_GetObjectItem(object, "type");
             if (NULL == type || !cJSON_IsString(type))
                 break;
             
             value = calloc(strlen(type->valuestring) + 1, sizeof(char));
-            strcpy(value, type->valuestring);             
+            strcpy(value, type->valuestring);
+        }
             break;
         case IOTEX_VC_BUILD_PROPERTY_SUB_TYPE_PRIVATE_STRING:
+        {
             cJSON *private_str = cJSON_GetObjectItem(object, name);
             if (NULL == private_str || !cJSON_IsString(private_str))
                 break;
             
             value = calloc(strlen(private_str->valuestring) + 1, sizeof(char));
-            strcpy(value, private_str->valuestring);                    
+            strcpy(value, private_str->valuestring);
             break;
+        }
         case IOTEX_VC_BUILD_PROPERTY_SUB_TYPE_PRIVATE_NUM:
+        {
             cJSON *private_num = cJSON_GetObjectItem(object, name);
             if (NULL == private_num || !cJSON_IsNumber(private_num))
                 break;
             
             value = malloc(sizeof(int));
-            *(int *)value = private_num->valueint;                          
+            *(int *)value = private_num->valueint;
             break;
+        }
         case IOTEX_VC_BUILD_PROPERTY_SUB_TYPE_PRIVATE_BOOL:
+        {
             cJSON *private_bool = cJSON_GetObjectItem(object, name);
             if (NULL == private_bool || !cJSON_IsBool(private_bool))
                 break;
             
             value = malloc(sizeof(bool));
-            *(int *)value = private_bool->valueint;             
+            *(int *)value = private_bool->valueint;
             break;
-        case IOTEX_VC_BUILD_PROPERTY_SUB_TYPE_PRIVATE_JSON: 
+        }
+        case IOTEX_VC_BUILD_PROPERTY_SUB_TYPE_PRIVATE_JSON:
+        {
             cJSON *private_json = cJSON_GetObjectItem(object, name);
             if (NULL == private_json || !cJSON_IsObject(private_json))
                 break;
               
-            value = malloc(sizeof(cJSON *)); 
-            value = (void *)cJSON_Duplicate(private_json, cJSON_True);                                                
+            value = malloc(sizeof(cJSON *));
+            value = (void *)cJSON_Duplicate(private_json, cJSON_True);
+        }
         default:
             return NULL;
     }        
@@ -383,6 +395,7 @@ void * iotex_vc_property_get(char *vc_serialize, unsigned int build_type, char *
         case IOTEX_VC_BUILD_PROPERTY_TYPE_TYPE:
             break;
         case IOTEX_VC_BUILD_PROPERTY_TYPE_CS:
+        {
             
             cJSON *cs_items = cJSON_GetObjectItem(vc_root, "credentialSubject");
             if (NULL == cs_items || !cJSON_IsArray(cs_items))
@@ -398,6 +411,7 @@ void * iotex_vc_property_get(char *vc_serialize, unsigned int build_type, char *
             
             value = _vc_sub_property_get(cs_item, sub_type, name);
             break;            
+        }
         case IOTEX_VC_BUILD_PROPERTY_TYPE_ISSUER:
             break;
         case IOTEX_VC_BUILD_PROPERTY_TYPE_ISSUER_DATE:

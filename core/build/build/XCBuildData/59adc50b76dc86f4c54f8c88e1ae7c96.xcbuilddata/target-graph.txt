@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'ioConnectCore' in project 'ioConnectcCore'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'ioConnectcCore'
+Target 'ZERO_CHECK' in project 'ioConnectcCore' (no dependencies)

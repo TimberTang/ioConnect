@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9C74C6AB97534013A0D92FCC /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 41DE0A8F4A1D420FB2BE78D3 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				A800260A6B7FBE642C00DC61 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		9E4990C806A04B62A2F89F4F /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3F578832CF4540C6BA2B6B3A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				1BE03D9C39D9FCB80835973D /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				7F503B715D9C4E41A453D5C5 /* PBXTargetDependency */,
+				F3E442F3EA314A3A9BAF2B08 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0190CC88431D46B8A5FFBF10 /* psa_its_nvs.c in Sources */ = {isa = PBXBuildFile; fileRef = D4A5111E6B014D2899321C0B /* psa_its_nvs.c */; };
+		06AC2361ED0B431DB64E63EA /* ecc_platform_specific.c in Sources */ = {isa = PBXBuildFile; fileRef = EE7398AC0F4640CD85F309F2 /* ecc_platform_specific.c */; };
+		07029470966845D781037CBF /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = A77A5DA34C094B15A76C158D /* base64.c */; };
+		07654671DDAA499FA73C8C73 /* psa_crypto_ecp.c in Sources */ = {isa = PBXBuildFile; fileRef = EBB160DBE12742C683C718EA /* psa_crypto_ecp.c */; };
+		096A5B256D1C4A63BD1425A6 /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = A6D533A1F53042788B109C38 /* pb_common.c */; };
+		11193E433B1346C69E89FDD9 /* from_prior.c in Sources */ = {isa = PBXBuildFile; fileRef = 106DDFC164C64499B2927038 /* from_prior.c */; };
+		1317C4683ACA4E1D978F80B3 /* flash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FC701CE1CC04FC086031F99 /* flash.cpp */; };
+		16204BDDD0104DED852A369F /* payload.pb.c in Sources */ = {isa = PBXBuildFile; fileRef = 54115863CCB046F9949F7067 /* payload.pb.c */; };
+		1AE5F374AF9341C8913CCBFF /* vc.c in Sources */ = {isa = PBXBuildFile; fileRef = F22BAE8121F34BF5A18C6782 /* vc.c */; };
+		23DDCF12767B41AA9616D0E5 /* psa_its_flash.c in Sources */ = {isa = PBXBuildFile; fileRef = E8812681741843B2AB36FE4E /* psa_its_flash.c */; };
+		267E06D8D6D34978847319A4 /* hmac_prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC6A305A734EE2B31252EC /* hmac_prng.c */; };
+		27E387B1A156429FB3CDDE21 /* header.pb.c in Sources */ = {isa = PBXBuildFile; fileRef = 69C94B736A044BEE81E81AE7 /* header.pb.c */; };
+		2BA583A43FA2495D89519431 /* ccm_mode.c in Sources */ = {isa = PBXBuildFile; fileRef = B704A600039940E891E53A84 /* ccm_mode.c */; };
+		2D4264273B7548958D0EA4E2 /* base58.c in Sources */ = {isa = PBXBuildFile; fileRef = 236F84CEB52649E58190AFC7 /* base58.c */; };
+		314FB9C2F46840B38F6BEA45 /* jwk.c in Sources */ = {isa = PBXBuildFile; fileRef = D658B32A9DC7424DA487F0F3 /* jwk.c */; };
+		31E058FC27184E29B3798A51 /* field_element.c in Sources */ = {isa = PBXBuildFile; fileRef = 47B9696E3D5447519BFB1F22 /* field_element.c */; };
+		371837665C65420096E29E77 /* ecc.c in Sources */ = {isa = PBXBuildFile; fileRef = E82726389BA24E44ABFC17C3 /* ecc.c */; };
+		37878606F3784E4198740119 /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEB6EC8278441DAFA60CB9 /* registry.c */; };
+		380721711CCF466692F4BF0A /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 532EF6671F9D422F93A346D5 /* pb_encode.c */; };
+		3BECD786F9FC442C851B9285 /* aes_encrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 19575F37B2354FA28E763EE2 /* aes_encrypt.c */; };
+		3C4A2C6FACEE49CDB02CFF4D /* psa_crypto_porting.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1498615374CCDBDA8639F /* psa_crypto_porting.c */; };
+		3FB38A8A7C074E66B2439843 /* DeviceConnect_Core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 837159703614425A8AB412C3 /* DeviceConnect_Core.cpp */; };
+		41F205E3AB014E579B5318E6 /* jwt.c in Sources */ = {isa = PBXBuildFile; fileRef = 64580C8D8F72479789C4BB2D /* jwt.c */; };
+		45682936FA3A494480EAC4CB /* cipher_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 186AC8431A064F4D98B5B51C /* cipher_wrap.c */; };
+		45FD84D92C6D4D8AA4D3382B /* psa_crypto_driver_wrappers.c in Sources */ = {isa = PBXBuildFile; fileRef = 797678D8BEA34E6585381431 /* psa_crypto_driver_wrappers.c */; };
+		46869858970046F599CC50E1 /* did.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA5AC6904741238C1527B4 /* did.c */; };
+		593862DA44A443D7AFB870DB /* ctr_mode.c in Sources */ = {isa = PBXBuildFile; fileRef = 697CCB0A00124A30A9892558 /* ctr_mode.c */; };
+		5F96A449952744958647154F /* flash.c in Sources */ = {isa = PBXBuildFile; fileRef = 984DEACA7E1041CCA9D1149D /* flash.c */; };
+		658159BE39564D25B34D4084 /* ecc_dh.c in Sources */ = {isa = PBXBuildFile; fileRef = 425BD4B547EA4A02B141DB10 /* ecc_dh.c */; };
+		6895C9CF28534040AD027136 /* nvs_esp32.c in Sources */ = {isa = PBXBuildFile; fileRef = E1345B48151D46909269420A /* nvs_esp32.c */; };
+		6B491B6BE44A4DCC910EA1CB /* message.c in Sources */ = {isa = PBXBuildFile; fileRef = 8027F85904DF449CBF72684F /* message.c */; };
+		7040737C743B48DEA24CF3DA /* group_element.c in Sources */ = {isa = PBXBuildFile; fileRef = 85E7B104D144442E9A499AB8 /* group_element.c */; };
+		70813FCE59574451A2890E2E /* nvs_common.c in Sources */ = {isa = PBXBuildFile; fileRef = FD89F18FEAC7474380E55F84 /* nvs_common.c */; };
+		76D17A1D6A5D462EA8E25894 /* keccak256.c in Sources */ = {isa = PBXBuildFile; fileRef = 3653D9B8D3864F4287D0FCA7 /* keccak256.c */; };
+		77386686D12D4C788605A368 /* psa_crypto_storage.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C57C22EC429414DA73D10F2 /* psa_crypto_storage.c */; };
+		774118D3607848F89F57E070 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CB077BBBB8247EAB8FB0269 /* hmac.c */; };
+		7B14C02EFDB9458A9B9571DA /* psa_its_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 242E3A01EBC242488F7B8C1C /* psa_its_file.c */; };
+		8092F0FCD55E4A3BBDCD99CE /* psa_crypto_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = CD45D24DDA6F4C47B80531DF /* psa_crypto_hash.c */; };
+		881261F9A300425AA8D9BFF8 /* did_key.c in Sources */ = {isa = PBXBuildFile; fileRef = B29E136D1CDE43C3A38FCA0A /* did_key.c */; };
+		8AF9D82998F445D69BD5BCEF /* psa_crypto.c in Sources */ = {isa = PBXBuildFile; fileRef = E231E1483F2C464CB29A38A1 /* psa_crypto.c */; };
+		8BA89D3535E04ADEA381E6DE /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 286D1DF7255B47C0A14F6FED /* sha256.c */; };
+		8DB29D9C4D5542C6AF251F36 /* LowerS.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F22B7299346F0A749D67D /* LowerS.c */; };
+		8F94704537F3481099B16AA5 /* jws.c in Sources */ = {isa = PBXBuildFile; fileRef = B4653789D5CA473B844A991B /* jws.c */; };
+		9AE3D5F5E308471193D1E699 /* sc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BE828F79C9D49E9B454E393 /* sc.c */; };
+		9E1A822E08B94E418D0A65BB /* flash_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 646D2CF11B3A4A76B996BA34 /* flash_common.c */; };
+		A005B6864693456AA1133808 /* nvs_esp32_secure.c in Sources */ = {isa = PBXBuildFile; fileRef = 873B77F0FF834525B9F9E9EB /* nvs_esp32_secure.c */; };
+		A623D127CB274ED59FA2B5AA /* did_io.c in Sources */ = {isa = PBXBuildFile; fileRef = F8DFB449C54343D6A8FF3B35 /* did_io.c */; };
+		A72BA4A13CBA4B6B9FCA3208 /* cbc_mode.c in Sources */ = {isa = PBXBuildFile; fileRef = 27789D4D32524C3BB45939EC /* cbc_mode.c */; };
+		ABBAD11153234B4BAFFE3CA5 /* devnet_upload.pb.c in Sources */ = {isa = PBXBuildFile; fileRef = 215422E6CD7745A1B5AA4E8A /* devnet_upload.pb.c */; };
+		AE708D4E69034044A90D1E70 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DB09C54575A494CBFB705EF /* pb_decode.c */; };
+		B4A04D78E91443F28FB6206A /* ecc_dsa.c in Sources */ = {isa = PBXBuildFile; fileRef = C6AE1208117A448EA2C0FC85 /* ecc_dsa.c */; };
+		B7EE617E24AE4F728D73DB37 /* psa_crypto_client.c in Sources */ = {isa = PBXBuildFile; fileRef = ACDD99EE5C7942A0A0BB7660 /* psa_crypto_client.c */; };
+		C1DF5932DB1847BEBE39A78D /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D7F867B4FF7AB0F8511 /* sha512.c */; };
+		D0D09FF28BDC442A9496E443 /* cmac_mode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFCCB4A9C64C2C9A18FE5F /* cmac_mode.c */; };
+		D66525B64CD0426C8A1B4643 /* ctr_prng.c in Sources */ = {isa = PBXBuildFile; fileRef = DAF178B584DB46469511544B /* ctr_prng.c */; };
+		D71FCF4F3D4546289A80C86D /* psa_crypto_aead.c in Sources */ = {isa = PBXBuildFile; fileRef = BF1ACCD3B2564EB290DE0C75 /* psa_crypto_aead.c */; };
+		D9C83BE6FB8747C1A0D82141 /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = FF81E8049C094E6082733DCD /* cJSON.c */; };
+		DD038AD15C7D4F13960A2CCB /* jwe.c in Sources */ = {isa = PBXBuildFile; fileRef = AC3036C3D7614415A9804A8A /* jwe.c */; };
+		E4CC7EE766F741309162ED44 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = D00F7E42672E49BFB5A32E41 /* utils.c */; };
+		EACAB62EF549405296DFCC8B /* iotex_dev_access.c in Sources */ = {isa = PBXBuildFile; fileRef = 4938C7319FFA4F8FAB37B03C /* iotex_dev_access.c */; };
+		EC554476F2D24D5D82CB3D51 /* ed_dsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2338319D44CF49B0DEBAF /* ed_dsa.c */; };
+		F3CD7256E6474ACB84BAF4A1 /* aes_decrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D44204A8543EF84C05F55 /* aes_decrypt.c */; };
+		F62B95D8ECF54302AFC88D40 /* packconfirm.pb.c in Sources */ = {isa = PBXBuildFile; fileRef = 86CAA4C7E4F549778727D29C /* packconfirm.pb.c */; };
+		F70253E8D8E642389C3AA4DD /* psa_crypto_cipher.c in Sources */ = {isa = PBXBuildFile; fileRef = E57DA23C4EB144D68E05E433 /* psa_crypto_cipher.c */; };
+		F968026A8C85447BAB001AE8 /* psa_crypto_slot_management.c in Sources */ = {isa = PBXBuildFile; fileRef = 00B4AC27028641ACAB209167 /* psa_crypto_slot_management.c */; };
+		FF1004C3395D4E21B6F8F0B2 /* psa_crypto_rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B50283F2ED840CB9A7D5B36 /* psa_crypto_rsa.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DC7C8EC878045B58989FACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37E8B771976A43A798F018DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C74C6AB97534013A0D92FCC;
+			remoteInfo = ZERO_CHECK;
+		};
+		207C4F9B8DAB4E9CAA00714D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37E8B771976A43A798F018DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C74C6AB97534013A0D92FCC;
+			remoteInfo = ZERO_CHECK;
+		};
+		778A981555734509A852924F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37E8B771976A43A798F018DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D796DECF972B4B63B9AFED9A;
+			remoteInfo = ioConnectCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B4AC27028641ACAB209167 /* psa_crypto_slot_management.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_crypto_slot_management.c; path = src/psa/psa_crypto_slot_management.c; sourceTree = SOURCE_ROOT; };
+		106DDFC164C64499B2927038 /* from_prior.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = from_prior.c; path = src/dids/didcomm/from_prior.c; sourceTree = SOURCE_ROOT; };
+		186AC8431A064F4D98B5B51C /* cipher_wrap.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cipher_wrap.c; path = src/psa/cipher_wrap.c; sourceTree = SOURCE_ROOT; };
+		19575F37B2354FA28E763EE2 /* aes_encrypt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = aes_encrypt.c; path = src/crypto/aes_encrypt.c; sourceTree = SOURCE_ROOT; };
+		1B8E3C9380B648658261DAF5 /* libioConnectCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libioConnectCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB2338319D44CF49B0DEBAF /* ed_dsa.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ed_dsa.c; path = src/crypto/ed_dsa.c; sourceTree = SOURCE_ROOT; };
+		215422E6CD7745A1B5AA4E8A /* devnet_upload.pb.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = devnet_upload.pb.c; path = src/utils/ProtoBuf/devnet_upload.pb.c; sourceTree = SOURCE_ROOT; };
+		236F84CEB52649E58190AFC7 /* base58.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = base58.c; path = src/utils/baseX/base58.c; sourceTree = SOURCE_ROOT; };
+		242E3A01EBC242488F7B8C1C /* psa_its_file.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_its_file.c; path = src/psa/psa_its_file.c; sourceTree = SOURCE_ROOT; };
+		24F74C44A2504892B7AA366F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		27789D4D32524C3BB45939EC /* cbc_mode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cbc_mode.c; path = src/crypto/cbc_mode.c; sourceTree = SOURCE_ROOT; };
+		286D1DF7255B47C0A14F6FED /* sha256.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sha256.c; path = src/crypto/sha256.c; sourceTree = SOURCE_ROOT; };
+		2B1D44204A8543EF84C05F55 /* aes_decrypt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = aes_decrypt.c; path = src/crypto/aes_decrypt.c; sourceTree = SOURCE_ROOT; };
+		2EE1498615374CCDBDA8639F /* psa_crypto_porting.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_crypto_porting.c; path = src/psa/psa_crypto_porting.c; sourceTree = SOURCE_ROOT; };
+		2FCFCCB4A9C64C2C9A18FE5F /* cmac_mode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmac_mode.c; path = src/crypto/cmac_mode.c; sourceTree = SOURCE_ROOT; };
+		3653D9B8D3864F4287D0FCA7 /* keccak256.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = keccak256.c; path = src/utils/keccak256/keccak256.c; sourceTree = SOURCE_ROOT; };
+		425BD4B547EA4A02B141DB10 /* ecc_dh.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ecc_dh.c; path = src/crypto/ecc_dh.c; sourceTree = SOURCE_ROOT; };
+		47B9696E3D5447519BFB1F22 /* field_element.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = field_element.c; path = src/crypto/field_element.c; sourceTree = SOURCE_ROOT; };
+		4938C7319FFA4F8FAB37B03C /* iotex_dev_access.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = iotex_dev_access.c; path = src/utils/iotex_dev_access.c; sourceTree = SOURCE_ROOT; };
+		4C57C22EC429414DA73D10F2 /* psa_crypto_storage.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_crypto_storage.c; path = src/psa/psa_crypto_storage.c; sourceTree = SOURCE_ROOT; };
+		4FC701CE1CC04FC086031F99 /* flash.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = flash.cpp; path = src/hal/flash/soc/esp8266/flash.cpp; sourceTree = SOURCE_ROOT; };
+		532EF6671F9D422F93A346D5 /* pb_encode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pb_encode.c; path = src/utils/ProtoBuf/pb_encode.c; sourceTree = SOURCE_ROOT; };
+		54115863CCB046F9949F7067 /* payload.pb.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = payload.pb.c; path = src/utils/ProtoBuf/payload.pb.c; sourceTree = SOURCE_ROOT; };
+		5BE828F79C9D49E9B454E393 /* sc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sc.c; path = src/crypto/sc.c; sourceTree = SOURCE_ROOT; };
+		5CB077BBBB8247EAB8FB0269 /* hmac.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = hmac.c; path = src/crypto/hmac.c; sourceTree = SOURCE_ROOT; };
+		5CBA5AC6904741238C1527B4 /* did.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = did.c; path = src/dids/did/did.c; sourceTree = SOURCE_ROOT; };
+		64580C8D8F72479789C4BB2D /* jwt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jwt.c; path = src/jose/jwt.c; sourceTree = SOURCE_ROOT; };
+		646D2CF11B3A4A76B996BA34 /* flash_common.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = flash_common.c; path = src/hal/flash/flash_common.c; sourceTree = SOURCE_ROOT; };
+		697CCB0A00124A30A9892558 /* ctr_mode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ctr_mode.c; path = src/crypto/ctr_mode.c; sourceTree = SOURCE_ROOT; };
+		69C94B736A044BEE81E81AE7 /* header.pb.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = header.pb.c; path = src/utils/ProtoBuf/header.pb.c; sourceTree = SOURCE_ROOT; };
+		6CAEB6EC8278441DAFA60CB9 /* registry.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = registry.c; path = src/dids/did/registry.c; sourceTree = SOURCE_ROOT; };
+		716D9A230EF74815A07F3D91 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		797678D8BEA34E6585381431 /* psa_crypto_driver_wrappers.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_crypto_driver_wrappers.c; path = src/psa/psa_crypto_driver_wrappers.c; sourceTree = SOURCE_ROOT; };
+		7B50283F2ED840CB9A7D5B36 /* psa_crypto_rsa.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_crypto_rsa.c; path = src/psa/psa_crypto_rsa.c; sourceTree = SOURCE_ROOT; };
+		8027F85904DF449CBF72684F /* message.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = message.c; path = src/dids/didcomm/message.c; sourceTree = SOURCE_ROOT; };
+		837159703614425A8AB412C3 /* DeviceConnect_Core.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DeviceConnect_Core.cpp; path = src/DeviceConnect_Core.cpp; sourceTree = SOURCE_ROOT; };
+		85E7B104D144442E9A499AB8 /* group_element.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = group_element.c; path = src/crypto/group_element.c; sourceTree = SOURCE_ROOT; };
+		86CAA4C7E4F549778727D29C /* packconfirm.pb.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = packconfirm.pb.c; path = src/utils/ProtoBuf/packconfirm.pb.c; sourceTree = SOURCE_ROOT; };
+		873B77F0FF834525B9F9E9EB /* nvs_esp32_secure.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = nvs_esp32_secure.c; path = src/hal/nvs/soc/esp32/nvs_esp32_secure.c; sourceTree = SOURCE_ROOT; };
+		8AEC6A305A734EE2B31252EC /* hmac_prng.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = hmac_prng.c; path = src/crypto/hmac_prng.c; sourceTree = SOURCE_ROOT; };
+		8B055D7F867B4FF7AB0F8511 /* sha512.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sha512.c; path = src/crypto/sha512.c; sourceTree = SOURCE_ROOT; };
+		8DB09C54575A494CBFB705EF /* pb_decode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pb_decode.c; path = src/utils/ProtoBuf/pb_decode.c; sourceTree = SOURCE_ROOT; };
+		984DEACA7E1041CCA9D1149D /* flash.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = flash.c; path = src/hal/flash/soc/esp32/flash.c; sourceTree = SOURCE_ROOT; };
+		9B3F22B7299346F0A749D67D /* LowerS.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = LowerS.c; path = src/utils/LowerS/LowerS.c; sourceTree = SOURCE_ROOT; };
+		A6D533A1F53042788B109C38 /* pb_common.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pb_common.c; path = src/utils/ProtoBuf/pb_common.c; sourceTree = SOURCE_ROOT; };
+		A77A5DA34C094B15A76C158D /* base64.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = base64.c; path = src/utils/baseX/base64.c; sourceTree = SOURCE_ROOT; };
+		AC3036C3D7614415A9804A8A /* jwe.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jwe.c; path = src/jose/jwe.c; sourceTree = SOURCE_ROOT; };
+		ACDD99EE5C7942A0A0BB7660 /* psa_crypto_client.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_crypto_client.c; path = src/psa/psa_crypto_client.c; sourceTree = SOURCE_ROOT; };
+		B29E136D1CDE43C3A38FCA0A /* did_key.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = did_key.c; path = src/dids/did/did_key.c; sourceTree = SOURCE_ROOT; };
+		B4653789D5CA473B844A991B /* jws.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jws.c; path = src/jose/jws.c; sourceTree = SOURCE_ROOT; };
+		B704A600039940E891E53A84 /* ccm_mode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ccm_mode.c; path = src/crypto/ccm_mode.c; sourceTree = SOURCE_ROOT; };
+		BF1ACCD3B2564EB290DE0C75 /* psa_crypto_aead.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_crypto_aead.c; path = src/psa/psa_crypto_aead.c; sourceTree = SOURCE_ROOT; };
+		C6AE1208117A448EA2C0FC85 /* ecc_dsa.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ecc_dsa.c; path = src/crypto/ecc_dsa.c; sourceTree = SOURCE_ROOT; };
+		CD45D24DDA6F4C47B80531DF /* psa_crypto_hash.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_crypto_hash.c; path = src/psa/psa_crypto_hash.c; sourceTree = SOURCE_ROOT; };
+		D00F7E42672E49BFB5A32E41 /* utils.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = utils.c; path = src/crypto/utils.c; sourceTree = SOURCE_ROOT; };
+		D4A5111E6B014D2899321C0B /* psa_its_nvs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_its_nvs.c; path = src/psa/psa_its_nvs.c; sourceTree = SOURCE_ROOT; };
+		D658B32A9DC7424DA487F0F3 /* jwk.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jwk.c; path = src/jose/jwk.c; sourceTree = SOURCE_ROOT; };
+		DAF178B584DB46469511544B /* ctr_prng.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ctr_prng.c; path = src/crypto/ctr_prng.c; sourceTree = SOURCE_ROOT; };
+		E1345B48151D46909269420A /* nvs_esp32.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = nvs_esp32.c; path = src/hal/nvs/soc/esp32/nvs_esp32.c; sourceTree = SOURCE_ROOT; };
+		E231E1483F2C464CB29A38A1 /* psa_crypto.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_crypto.c; path = src/psa/psa_crypto.c; sourceTree = SOURCE_ROOT; };
+		E57DA23C4EB144D68E05E433 /* psa_crypto_cipher.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_crypto_cipher.c; path = src/psa/psa_crypto_cipher.c; sourceTree = SOURCE_ROOT; };
+		E82726389BA24E44ABFC17C3 /* ecc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ecc.c; path = src/crypto/ecc.c; sourceTree = SOURCE_ROOT; };
+		E8812681741843B2AB36FE4E /* psa_its_flash.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_its_flash.c; path = src/psa/psa_its_flash.c; sourceTree = SOURCE_ROOT; };
+		EBB160DBE12742C683C718EA /* psa_crypto_ecp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = psa_crypto_ecp.c; path = src/psa/psa_crypto_ecp.c; sourceTree = SOURCE_ROOT; };
+		EE7398AC0F4640CD85F309F2 /* ecc_platform_specific.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ecc_platform_specific.c; path = src/crypto/ecc_platform_specific.c; sourceTree = SOURCE_ROOT; };
+		F22BAE8121F34BF5A18C6782 /* vc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vc.c; path = src/dids/vc/vc.c; sourceTree = SOURCE_ROOT; };
+		F8DFB449C54343D6A8FF3B35 /* did_io.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = did_io.c; path = src/dids/did/did_io.c; sourceTree = SOURCE_ROOT; };
+		FD89F18FEAC7474380E55F84 /* nvs_common.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = nvs_common.c; path = src/hal/nvs/nvs_common.c; sourceTree = SOURCE_ROOT; };
+		FF81E8049C094E6082733DCD /* cJSON.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cJSON.c; path = src/utils/cJSON/cJSON.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FD8959655E84552A24EFBC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CC2213316C54973AA628F17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		573F92C725E34BCA877A5754 /* ioConnectCore */ = {
+			isa = PBXGroup;
+			children = (
+				CED8903A1CDD44D0AF342501 /* Source Files */,
+				24F74C44A2504892B7AA366F /* CMakeLists.txt */,
+			);
+			name = ioConnectCore;
+			sourceTree = "<group>";
+		};
+		86383B8D5D7748C7A2B40F52 = {
+			isa = PBXGroup;
+			children = (
+				573F92C725E34BCA877A5754 /* ioConnectCore */,
+				B81DEEDB7AE3415DBF0B9519 /* ALL_BUILD */,
+				F05C2B84B7804BC994C1AF84 /* Products */,
+				4CC2213316C54973AA628F17 /* Frameworks */,
+				CDF8675ED28747A3B426F062 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		B81DEEDB7AE3415DBF0B9519 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				DC0C7A56AAA7493FB404AA00 /* CMake Rules */,
+				716D9A230EF74815A07F3D91 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		CDF8675ED28747A3B426F062 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CED8903A1CDD44D0AF342501 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				837159703614425A8AB412C3 /* DeviceConnect_Core.cpp */,
+				2B1D44204A8543EF84C05F55 /* aes_decrypt.c */,
+				19575F37B2354FA28E763EE2 /* aes_encrypt.c */,
+				27789D4D32524C3BB45939EC /* cbc_mode.c */,
+				B704A600039940E891E53A84 /* ccm_mode.c */,
+				2FCFCCB4A9C64C2C9A18FE5F /* cmac_mode.c */,
+				697CCB0A00124A30A9892558 /* ctr_mode.c */,
+				DAF178B584DB46469511544B /* ctr_prng.c */,
+				E82726389BA24E44ABFC17C3 /* ecc.c */,
+				425BD4B547EA4A02B141DB10 /* ecc_dh.c */,
+				C6AE1208117A448EA2C0FC85 /* ecc_dsa.c */,
+				EE7398AC0F4640CD85F309F2 /* ecc_platform_specific.c */,
+				1CB2338319D44CF49B0DEBAF /* ed_dsa.c */,
+				47B9696E3D5447519BFB1F22 /* field_element.c */,
+				85E7B104D144442E9A499AB8 /* group_element.c */,
+				5CB077BBBB8247EAB8FB0269 /* hmac.c */,
+				8AEC6A305A734EE2B31252EC /* hmac_prng.c */,
+				5BE828F79C9D49E9B454E393 /* sc.c */,
+				286D1DF7255B47C0A14F6FED /* sha256.c */,
+				8B055D7F867B4FF7AB0F8511 /* sha512.c */,
+				D00F7E42672E49BFB5A32E41 /* utils.c */,
+				5CBA5AC6904741238C1527B4 /* did.c */,
+				F8DFB449C54343D6A8FF3B35 /* did_io.c */,
+				B29E136D1CDE43C3A38FCA0A /* did_key.c */,
+				6CAEB6EC8278441DAFA60CB9 /* registry.c */,
+				106DDFC164C64499B2927038 /* from_prior.c */,
+				8027F85904DF449CBF72684F /* message.c */,
+				F22BAE8121F34BF5A18C6782 /* vc.c */,
+				646D2CF11B3A4A76B996BA34 /* flash_common.c */,
+				984DEACA7E1041CCA9D1149D /* flash.c */,
+				4FC701CE1CC04FC086031F99 /* flash.cpp */,
+				FD89F18FEAC7474380E55F84 /* nvs_common.c */,
+				E1345B48151D46909269420A /* nvs_esp32.c */,
+				873B77F0FF834525B9F9E9EB /* nvs_esp32_secure.c */,
+				AC3036C3D7614415A9804A8A /* jwe.c */,
+				D658B32A9DC7424DA487F0F3 /* jwk.c */,
+				B4653789D5CA473B844A991B /* jws.c */,
+				64580C8D8F72479789C4BB2D /* jwt.c */,
+				186AC8431A064F4D98B5B51C /* cipher_wrap.c */,
+				E231E1483F2C464CB29A38A1 /* psa_crypto.c */,
+				BF1ACCD3B2564EB290DE0C75 /* psa_crypto_aead.c */,
+				E57DA23C4EB144D68E05E433 /* psa_crypto_cipher.c */,
+				ACDD99EE5C7942A0A0BB7660 /* psa_crypto_client.c */,
+				797678D8BEA34E6585381431 /* psa_crypto_driver_wrappers.c */,
+				EBB160DBE12742C683C718EA /* psa_crypto_ecp.c */,
+				CD45D24DDA6F4C47B80531DF /* psa_crypto_hash.c */,
+				2EE1498615374CCDBDA8639F /* psa_crypto_porting.c */,
+				7B50283F2ED840CB9A7D5B36 /* psa_crypto_rsa.c */,
+				00B4AC27028641ACAB209167 /* psa_crypto_slot_management.c */,
+				4C57C22EC429414DA73D10F2 /* psa_crypto_storage.c */,
+				242E3A01EBC242488F7B8C1C /* psa_its_file.c */,
+				E8812681741843B2AB36FE4E /* psa_its_flash.c */,
+				D4A5111E6B014D2899321C0B /* psa_its_nvs.c */,
+				9B3F22B7299346F0A749D67D /* LowerS.c */,
+				215422E6CD7745A1B5AA4E8A /* devnet_upload.pb.c */,
+				69C94B736A044BEE81E81AE7 /* header.pb.c */,
+				86CAA4C7E4F549778727D29C /* packconfirm.pb.c */,
+				54115863CCB046F9949F7067 /* payload.pb.c */,
+				A6D533A1F53042788B109C38 /* pb_common.c */,
+				8DB09C54575A494CBFB705EF /* pb_decode.c */,
+				532EF6671F9D422F93A346D5 /* pb_encode.c */,
+				236F84CEB52649E58190AFC7 /* base58.c */,
+				A77A5DA34C094B15A76C158D /* base64.c */,
+				FF81E8049C094E6082733DCD /* cJSON.c */,
+				4938C7319FFA4F8FAB37B03C /* iotex_dev_access.c */,
+				3653D9B8D3864F4287D0FCA7 /* keccak256.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DC0C7A56AAA7493FB404AA00 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F05C2B84B7804BC994C1AF84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B8E3C9380B648658261DAF5 /* libioConnectCore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D796DECF972B4B63B9AFED9A /* ioConnectCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F983488C1D2416983ED5196 /* Build configuration list for PBXNativeTarget "ioConnectCore" */;
+			buildPhases = (
+				9783BD86FEA54276B970A77A /* Sources */,
+				0FD8959655E84552A24EFBC0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7585A6C10B634EF0A4E03CF3 /* PBXTargetDependency */,
+			);
+			name = ioConnectCore;
+			productName = ioConnectCore;
+			productReference = 1B8E3C9380B648658261DAF5 /* libioConnectCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37E8B771976A43A798F018DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = E10B127F8BBA4964851EF20E /* Build configuration list for PBXProject "ioConnectcCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86383B8D5D7748C7A2B40F52;
+			projectDirPath = /Users/timbertang/Desktop/ioConnect/core;
+			projectRoot = "";
+			targets = (
+				9E4990C806A04B62A2F89F4F /* ALL_BUILD */,
+				9C74C6AB97534013A0D92FCC /* ZERO_CHECK */,
+				D796DECF972B4B63B9AFED9A /* ioConnectCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BE03D9C39D9FCB80835973D /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				/Users/timbertang/Desktop/ioConnect/core/build/CMakeFiles/ALL_BUILD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/timbertang/Desktop/ioConnect/core/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/timbertang/Desktop/ioConnect/core/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/timbertang/Desktop/ioConnect/core/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/timbertang/Desktop/ioConnect/core/build\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A800260A6B7FBE642C00DC61 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				/Users/timbertang/Desktop/ioConnect/core/build/CMakeFiles/ZERO_CHECK,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/timbertang/Desktop/ioConnect/core/build\n  make -f /Users/timbertang/Desktop/ioConnect/core/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/timbertang/Desktop/ioConnect/core/build\n  make -f /Users/timbertang/Desktop/ioConnect/core/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/timbertang/Desktop/ioConnect/core/build\n  make -f /Users/timbertang/Desktop/ioConnect/core/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/timbertang/Desktop/ioConnect/core/build\n  make -f /Users/timbertang/Desktop/ioConnect/core/build/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9783BD86FEA54276B970A77A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB38A8A7C074E66B2439843 /* DeviceConnect_Core.cpp in Sources */,
+				F3CD7256E6474ACB84BAF4A1 /* aes_decrypt.c in Sources */,
+				3BECD786F9FC442C851B9285 /* aes_encrypt.c in Sources */,
+				A72BA4A13CBA4B6B9FCA3208 /* cbc_mode.c in Sources */,
+				2BA583A43FA2495D89519431 /* ccm_mode.c in Sources */,
+				D0D09FF28BDC442A9496E443 /* cmac_mode.c in Sources */,
+				593862DA44A443D7AFB870DB /* ctr_mode.c in Sources */,
+				D66525B64CD0426C8A1B4643 /* ctr_prng.c in Sources */,
+				371837665C65420096E29E77 /* ecc.c in Sources */,
+				658159BE39564D25B34D4084 /* ecc_dh.c in Sources */,
+				B4A04D78E91443F28FB6206A /* ecc_dsa.c in Sources */,
+				06AC2361ED0B431DB64E63EA /* ecc_platform_specific.c in Sources */,
+				EC554476F2D24D5D82CB3D51 /* ed_dsa.c in Sources */,
+				31E058FC27184E29B3798A51 /* field_element.c in Sources */,
+				7040737C743B48DEA24CF3DA /* group_element.c in Sources */,
+				774118D3607848F89F57E070 /* hmac.c in Sources */,
+				267E06D8D6D34978847319A4 /* hmac_prng.c in Sources */,
+				9AE3D5F5E308471193D1E699 /* sc.c in Sources */,
+				8BA89D3535E04ADEA381E6DE /* sha256.c in Sources */,
+				C1DF5932DB1847BEBE39A78D /* sha512.c in Sources */,
+				E4CC7EE766F741309162ED44 /* utils.c in Sources */,
+				46869858970046F599CC50E1 /* did.c in Sources */,
+				A623D127CB274ED59FA2B5AA /* did_io.c in Sources */,
+				881261F9A300425AA8D9BFF8 /* did_key.c in Sources */,
+				37878606F3784E4198740119 /* registry.c in Sources */,
+				11193E433B1346C69E89FDD9 /* from_prior.c in Sources */,
+				6B491B6BE44A4DCC910EA1CB /* message.c in Sources */,
+				1AE5F374AF9341C8913CCBFF /* vc.c in Sources */,
+				9E1A822E08B94E418D0A65BB /* flash_common.c in Sources */,
+				5F96A449952744958647154F /* flash.c in Sources */,
+				1317C4683ACA4E1D978F80B3 /* flash.cpp in Sources */,
+				70813FCE59574451A2890E2E /* nvs_common.c in Sources */,
+				6895C9CF28534040AD027136 /* nvs_esp32.c in Sources */,
+				A005B6864693456AA1133808 /* nvs_esp32_secure.c in Sources */,
+				DD038AD15C7D4F13960A2CCB /* jwe.c in Sources */,
+				314FB9C2F46840B38F6BEA45 /* jwk.c in Sources */,
+				8F94704537F3481099B16AA5 /* jws.c in Sources */,
+				41F205E3AB014E579B5318E6 /* jwt.c in Sources */,
+				45682936FA3A494480EAC4CB /* cipher_wrap.c in Sources */,
+				8AF9D82998F445D69BD5BCEF /* psa_crypto.c in Sources */,
+				D71FCF4F3D4546289A80C86D /* psa_crypto_aead.c in Sources */,
+				F70253E8D8E642389C3AA4DD /* psa_crypto_cipher.c in Sources */,
+				B7EE617E24AE4F728D73DB37 /* psa_crypto_client.c in Sources */,
+				45FD84D92C6D4D8AA4D3382B /* psa_crypto_driver_wrappers.c in Sources */,
+				07654671DDAA499FA73C8C73 /* psa_crypto_ecp.c in Sources */,
+				8092F0FCD55E4A3BBDCD99CE /* psa_crypto_hash.c in Sources */,
+				3C4A2C6FACEE49CDB02CFF4D /* psa_crypto_porting.c in Sources */,
+				FF1004C3395D4E21B6F8F0B2 /* psa_crypto_rsa.c in Sources */,
+				F968026A8C85447BAB001AE8 /* psa_crypto_slot_management.c in Sources */,
+				77386686D12D4C788605A368 /* psa_crypto_storage.c in Sources */,
+				7B14C02EFDB9458A9B9571DA /* psa_its_file.c in Sources */,
+				23DDCF12767B41AA9616D0E5 /* psa_its_flash.c in Sources */,
+				0190CC88431D46B8A5FFBF10 /* psa_its_nvs.c in Sources */,
+				8DB29D9C4D5542C6AF251F36 /* LowerS.c in Sources */,
+				ABBAD11153234B4BAFFE3CA5 /* devnet_upload.pb.c in Sources */,
+				27E387B1A156429FB3CDDE21 /* header.pb.c in Sources */,
+				F62B95D8ECF54302AFC88D40 /* packconfirm.pb.c in Sources */,
+				16204BDDD0104DED852A369F /* payload.pb.c in Sources */,
+				096A5B256D1C4A63BD1425A6 /* pb_common.c in Sources */,
+				AE708D4E69034044A90D1E70 /* pb_decode.c in Sources */,
+				380721711CCF466692F4BF0A /* pb_encode.c in Sources */,
+				2D4264273B7548958D0EA4E2 /* base58.c in Sources */,
+				07029470966845D781037CBF /* base64.c in Sources */,
+				D9C83BE6FB8747C1A0D82141 /* cJSON.c in Sources */,
+				EACAB62EF549405296DFCC8B /* iotex_dev_access.c in Sources */,
+				76D17A1D6A5D462EA8E25894 /* keccak256.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7585A6C10B634EF0A4E03CF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C74C6AB97534013A0D92FCC /* ZERO_CHECK */;
+			targetProxy = 207C4F9B8DAB4E9CAA00714D /* PBXContainerItemProxy */;
+		};
+		7F503B715D9C4E41A453D5C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D796DECF972B4B63B9AFED9A /* ioConnectCore */;
+			targetProxy = 778A981555734509A852924F /* PBXContainerItemProxy */;
+		};
+		F3E442F3EA314A3A9BAF2B08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C74C6AB97534013A0D92FCC /* ZERO_CHECK */;
+			targetProxy = 0DC7C8EC878045B58989FACC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		060E9690E2CA4F5C8E9C4AC0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/timbertang/Desktop/ioConnect/core/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		1E0DB84D0DB8482DB02907DE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		20F00E5DE25A421F8A7B0D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/timbertang/Desktop/ioConnect/core/build/build;
+			};
+			name = Release;
+		};
+		244D6AC91FD147CEA5B078A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/timbertang/Desktop/ioConnect/core/build/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/timbertang/Desktop/ioConnect/core/src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ioConnectCore;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGET_TEMP_DIR = "/Users/timbertang/Desktop/ioConnect/core/build/build/ioConnectCore.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		3CCEC515DDC8424DA28D21D2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		3DDFF35DCD4F40EBA888DA59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		5DB6D780470346C49E50B168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		6C693242064640838939C111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		706D90754C20485BB7D09481 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		880CB3BBFB8B4C9CB6AA38C0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		8EB069000997412B94838C9E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/timbertang/Desktop/ioConnect/core/build/build;
+			};
+			name = MinSizeRel;
+		};
+		8F91B42C1A464BF883C51818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		A94E69A367E6452C9107B53E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/timbertang/Desktop/ioConnect/core/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/timbertang/Desktop/ioConnect/core/src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ioConnectCore;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGET_TEMP_DIR = "/Users/timbertang/Desktop/ioConnect/core/build/build/ioConnectCore.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		B1DC15E11DF540E29F529C1C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/timbertang/Desktop/ioConnect/core/build/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/timbertang/Desktop/ioConnect/core/src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ioConnectCore;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGET_TEMP_DIR = "/Users/timbertang/Desktop/ioConnect/core/build/build/ioConnectCore.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		B80770C95D714F32AFF785D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk;
+				SYMROOT = /Users/timbertang/Desktop/ioConnect/core/build/build;
+			};
+			name = Debug;
+		};
+		FAC1CB1E533745148FFEA2CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/timbertang/Desktop/ioConnect/core/build/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/timbertang/Desktop/ioConnect/core/src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ioConnectCore;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGET_TEMP_DIR = "/Users/timbertang/Desktop/ioConnect/core/build/build/ioConnectCore.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F578832CF4540C6BA2B6B3A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DB6D780470346C49E50B168 /* Debug */,
+				3DDFF35DCD4F40EBA888DA59 /* Release */,
+				3CCEC515DDC8424DA28D21D2 /* MinSizeRel */,
+				880CB3BBFB8B4C9CB6AA38C0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		41DE0A8F4A1D420FB2BE78D3 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C693242064640838939C111 /* Debug */,
+				8F91B42C1A464BF883C51818 /* Release */,
+				1E0DB84D0DB8482DB02907DE /* MinSizeRel */,
+				706D90754C20485BB7D09481 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7F983488C1D2416983ED5196 /* Build configuration list for PBXNativeTarget "ioConnectCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244D6AC91FD147CEA5B078A2 /* Debug */,
+				FAC1CB1E533745148FFEA2CF /* Release */,
+				B1DC15E11DF540E29F529C1C /* MinSizeRel */,
+				A94E69A367E6452C9107B53E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E10B127F8BBA4964851EF20E /* Build configuration list for PBXProject "ioConnectcCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80770C95D714F32AFF785D9 /* Debug */,
+				20F00E5DE25A421F8A7B0D6A /* Release */,
+				8EB069000997412B94838C9E /* MinSizeRel */,
+				060E9690E2CA4F5C8E9C4AC0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37E8B771976A43A798F018DD /* Project object */;
+}

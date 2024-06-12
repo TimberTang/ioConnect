@@ -108,6 +108,7 @@ void * iotex_jwt_claim_get_value(char *jwt_serialize, enum JWTType jwt_type, enu
  
     switch (type) {
         case JWT_CLAIM_TYPE_ISS:
+        {
             cJSON *iss = cJSON_GetObjectItem(payload_root, "iss");
             if (NULL == iss || !cJSON_IsString(iss))
                 goto exit_2;
@@ -115,77 +116,96 @@ void * iotex_jwt_claim_get_value(char *jwt_serialize, enum JWTType jwt_type, enu
             value = calloc(strlen(iss->valuestring) + 1, sizeof(char));
             strcpy(value, iss->valuestring);
             break;
+        }
         case JWT_CLAIM_TYPE_SUB:
-            cJSON *sub = cJSON_GetObjectItem(payload_root, "sub");
-            if (NULL == sub || !cJSON_IsString(sub))
-                goto exit_2;
-            
-            value = calloc(strlen(sub->valuestring) + 1, sizeof(char));
-            strcpy(value, sub->valuestring);            
-            break;
+            {
+                cJSON *sub = cJSON_GetObjectItem(payload_root, "sub");
+                if (NULL == sub || !cJSON_IsString(sub))
+                    goto exit_2;
+                
+                value = calloc(strlen(sub->valuestring) + 1, sizeof(char));
+                strcpy(value, sub->valuestring);
+                break;
+            }
         case JWT_CLAIM_TYPE_AUD:
-            cJSON *aud = cJSON_GetObjectItem(payload_root, "aud");
-            if (NULL == aud || !cJSON_IsString(aud))
-                goto exit_2;
-            
-            value = calloc(strlen(aud->valuestring) + 1, sizeof(char));
-            strcpy(value, aud->valuestring);             
-            break;
+            {
+                cJSON *aud = cJSON_GetObjectItem(payload_root, "aud");
+                if (NULL == aud || !cJSON_IsString(aud))
+                    goto exit_2;
+                
+                value = calloc(strlen(aud->valuestring) + 1, sizeof(char));
+                strcpy(value, aud->valuestring);
+                break;
+            }
         case JWT_CLAIM_TYPE_EXP:
-            cJSON *exp = cJSON_GetObjectItem(payload_root, "exp");
-            if (NULL == exp || !cJSON_IsNumber(exp))
-                goto exit_2;
-            
-            value = malloc(sizeof(int));
-            *(int *)value = exp->valueint;
-            break;
+            {
+                cJSON *exp = cJSON_GetObjectItem(payload_root, "exp");
+                if (NULL == exp || !cJSON_IsNumber(exp))
+                    goto exit_2;
+                
+                value = malloc(sizeof(int));
+                *(int *)value = exp->valueint;
+                break;
+            }
         case JWT_CLAIM_TYPE_NBF:
-            cJSON *nbf = cJSON_GetObjectItem(payload_root, "nbf");
-            if (NULL == nbf || !cJSON_IsNumber(nbf))
-                goto exit_2;
-            
-            value = malloc(sizeof(int));
-            *(int *)value = nbf->valueint;            
-            break;
+            {
+                cJSON *nbf = cJSON_GetObjectItem(payload_root, "nbf");
+                if (NULL == nbf || !cJSON_IsNumber(nbf))
+                    goto exit_2;
+                
+                value = malloc(sizeof(int));
+                *(int *)value = nbf->valueint;
+                break;
+            }
         case JWT_CLAIM_TYPE_IAT:
-            cJSON *iat = cJSON_GetObjectItem(payload_root, "iat");
-            if (NULL == iat || !cJSON_IsNumber(iat))
-                goto exit_2;
-            
-            value = malloc(sizeof(int));
-            *(int *)value = iat->valueint;            
-            break;
+            {
+                cJSON *iat = cJSON_GetObjectItem(payload_root, "iat");
+                if (NULL == iat || !cJSON_IsNumber(iat))
+                    goto exit_2;
+                
+                value = malloc(sizeof(int));
+                *(int *)value = iat->valueint;
+                break;
+            }
         case JWT_CLAIM_TYPE_PRIVATE_STRING:
-            cJSON *private_str = cJSON_GetObjectItem(payload_root, name);
-            if (NULL == private_str || !cJSON_IsString(private_str))
-                goto exit_2;
-            
-            value = calloc(strlen(private_str->valuestring) + 1, sizeof(char));
-            strcpy(value, private_str->valuestring);             
-            break;
+            {
+                cJSON *private_str = cJSON_GetObjectItem(payload_root, name);
+                if (NULL == private_str || !cJSON_IsString(private_str))
+                    goto exit_2;
+                
+                value = calloc(strlen(private_str->valuestring) + 1, sizeof(char));
+                strcpy(value, private_str->valuestring);
+                break;
+            }
         case JWT_CLAIM_TYPE_PRIVATE_NUM:
-            cJSON *private_num = cJSON_GetObjectItem(payload_root, name);
-            if (NULL == private_num || !cJSON_IsNumber(private_num))
-                goto exit_2;
-            
-            value = malloc(sizeof(int));
-            *(int *)value = private_num->valueint;              
-            break;
+            {
+                cJSON *private_num = cJSON_GetObjectItem(payload_root, name);
+                if (NULL == private_num || !cJSON_IsNumber(private_num))
+                    goto exit_2;
+                
+                value = malloc(sizeof(int));
+                *(int *)value = private_num->valueint;
+                break;
+            }
         case JWT_CLAIM_TYPE_PRIVATE_BOOL:
-            cJSON *private_bool = cJSON_GetObjectItem(payload_root, name);
-            if (NULL == private_bool || !cJSON_IsBool(private_bool))
-                goto exit_2;
+            {
+                cJSON *private_bool = cJSON_GetObjectItem(payload_root, name);
+                if (NULL == private_bool || !cJSON_IsBool(private_bool))
+                    goto exit_2;
 
-            value = malloc(sizeof(bool));
-            *(int *)value = private_bool->valueint;                 
-            break;
-        case JWT_CLAIM_TYPE_PRIVATE_JSON:         
-            cJSON *private_json = cJSON_GetObjectItem(payload_root, name);
-            if (NULL == private_json || !cJSON_IsObject(private_json))
-                goto exit_2;            
+                value = malloc(sizeof(bool));
+                *(int *)value = private_bool->valueint;
+                break;
+            }
+        case JWT_CLAIM_TYPE_PRIVATE_JSON:
+            {
+                cJSON *private_json = cJSON_GetObjectItem(payload_root, name);
+                if (NULL == private_json || !cJSON_IsObject(private_json))
+                    goto exit_2;
 
-            value = (void *)cJSON_Duplicate(private_json, cJSON_True);
-            break;
+                value = (void *)cJSON_Duplicate(private_json, cJSON_True);
+                break;
+            }
         default:
             goto exit_2;            
     }

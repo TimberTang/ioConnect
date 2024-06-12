@@ -1,0 +1,3 @@
+/Users/timbertang/Desktop/ioConnect/core/build/CMakeFiles/ioConnectCore.dir
+/Users/timbertang/Desktop/ioConnect/core/build/CMakeFiles/ALL_BUILD.dir
+/Users/timbertang/Desktop/ioConnect/core/build/CMakeFiles/ZERO_CHECK.dir
